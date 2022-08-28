@@ -1,0 +1,72 @@
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU3NzZlZTkzLTcxZWEtNDkzNy05NGU4LTE0ODdlZTFhMDU5NCIsImlhdCI6MTY2MTQyODI1OCwiZXhwIjoxNjYxNDQ2MjU4fQ.bxTMq81p8E1J_EGhpyf362n8hSdUh6bRq6ibJ4wqkaY
+###
+// pega perfil
+
+GET http://localhost:3003/user/feed
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y1NWVkLTliZGUtNGVmZC04MzQzLTI5NzY1M2E4MTlhNCIsImlhdCI6MTY2MTQ0Mjg5MCwiZXhwIjoxNjYxNDYwODkwfQ.KWJcPhijtqwB9kfh_YdQP3iYJ0V1PihLJyewY9ooFA4
+###
+// Pegar feed
+
+GET http://localhost:3003/user/profile/9cb08fd1-e37f-4188-bb17-5081d3a877e7
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y1NWVkLTliZGUtNGVmZC04MzQzLTI5NzY1M2E4MTlhNCIsImlhdCI6MTY2MTQ0Mjg5MCwiZXhwIjoxNjYxNDYwODkwfQ.KWJcPhijtqwB9kfh_YdQP3iYJ0V1PihLJyewY9ooFA4
+
+// pega perfil de outro usuário
+###
+
+GET http://localhost:3003/recipe/3f8af21c-5c85-47bb-9dd3-e472175c60be
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y1NWVkLTliZGUtNGVmZC04MzQzLTI5NzY1M2E4MTlhNCIsImlhdCI6MTY2MTQ0Mjg5MCwiZXhwIjoxNjYxNDYwODkwfQ.KWJcPhijtqwB9kfh_YdQP3iYJ0V1PihLJyewY9ooFA4
+
+// pegar receita, precia do id da receita
+###
+
+POST http://localhost:3003/recipe
+Content-Type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBkMWYzNjZmLWU4MzktNGJhYi04NzM2LWE1NDE5OTY4NzdkZSIsImlhdCI6MTY2MTM4MDE3MSwiZXhwIjoxNjYxMzk4MTcxfQ.h5W-AZ95IWCikPsM10_I3kttXKy9PhSNKx0ru3Tbc3k
+
+// Pegar receita
+{
+	"title": "bolo de moranggo",
+	"description": "8 xícara (chá) de leite, 5 xícara (chá) de farinha de trigo"
+}
+
+###
+POST http://localhost:3003/user/sinup
+Content-Type: application/json 
+
+// cadastro de usuário
+{
+    "name": "simone",
+    "email": "simone@email.com",
+    "password": "simone456"
+}
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json 
+
+// login de usuário
+{
+    "email": "vinicus@email.com",
+     "password": "vinicus456"
+
+   // "email": "caila@email.com",
+   // "password": "caila456"
+
+    //"email": "vitor@email.com",
+    //"password": "vitor456"
+}
+###
+
+POST http://localhost:3003/userFollow/e776ee93-71ea-4937-94e8-1487ee1a0594
+Content-Type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y1NWVkLTliZGUtNGVmZC04MzQzLTI5NzY1M2E4MTlhNCIsImlhdCI6MTY2MTQ0Mjg5MCwiZXhwIjoxNjYxNDYwODkwfQ.KWJcPhijtqwB9kfh_YdQP3iYJ0V1PihLJyewY9ooFA4
+
+// seguir usuário
+###
+
+POST http://localhost:3003/userFollow/unfollow/e776ee93-71ea-4937-94e8-1487ee1a0594
+Content-Type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzN2Y1NWVkLTliZGUtNGVmZC04MzQzLTI5NzY1M2E4MTlhNCIsImlhdCI6MTY2MTQ0Mjg5MCwiZXhwIjoxNjYxNDYwODkwfQ.KWJcPhijtqwB9kfh_YdQP3iYJ0V1PihLJyewY9ooFA4
+
+// deixar de seguir
