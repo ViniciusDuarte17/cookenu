@@ -26,9 +26,34 @@ Esse produto nada mais é do que uma rede social, na qual os usuário podem divi
  - Knex
  - Paradigma de orientação a objetos
  - Arquitetura em camadas
+ 
+ ### Instruções para rodar aplicação localmente
+ 
+ Clone o projeto
+
+```bash
+git clone https://github.com/ViniciusDuarte17/Gebru-LAMA9.git
+```
+Instale as dependências
+
+```bash
+npm install
+```
+
+```bash
+Criar o arquivo .env no back-end
+```
+
+Inicie o servidor
+
+```
+npm run dev 
+```
 
  ### Documentação
-
+```
+BASE_URL DO BACK-END: https://cookenu-user.herokuapp.com
+```
 [Documentação]( https://documenter.getpostman.com/view/19713876/VUr1Gso8)
 
 ## Autor
