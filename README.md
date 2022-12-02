@@ -32,7 +32,7 @@ Esse produto nada mais é do que uma rede social, na qual os usuário podem divi
  Clone o projeto
 
 ```bash
-git clone https://github.com/ViniciusDuarte17/Gebru-LAMA9.git
+git clone https://github.com/ViniciusDuarte17/cookenu.git
 ```
 Instale as dependências
 
